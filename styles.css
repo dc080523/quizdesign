@@ -1,160 +1,137 @@
-/* styles.css */
+/* Import a retro or vintage-style font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     font-family: 'Press Start 2P', cursive; 
-    background-color: #000; 
-    color: #0f0; 
+    background-color: #f7f7f7; 
+    color: #333; 
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #111; 
-    color: #0f0; 
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 5px solid #0f0; 
-}
-
-header h1 {
-    margin: 0;
-    font-size: 4em; 
-}
-
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-button {
-    padding: 15px 30px;
-    font-size: 1em;
-    background-color: #0f0;
+/* Header styling */
+.retro-header {
+    background-color: #ffeb3b; 
     color: #000; 
-    border: 3px solid #0f0; 
-    border-radius: 20px; 
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #000; 
+}
+
+.retro-header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.retro-button {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
     cursor: pointer;
     text-transform: uppercase;
-    font-family: 'Press Start 2P', cursive; 
 }
 
-nav {
-    background-color: #111; 
-    color: #0f0; 
-    padding: 10px 0;
+.retro-button:hover {
+    background-color: #333; 
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #0f0; 
-    text-decoration: none;
-    font-family: 'Press Start 2P', cursive; 
-}
-
-main {
-    padding: 20px;
-}
-
-.featured, .latest-episodes {
-    margin-bottom: 20px;
-}
-
-.webtoon-list, .episode-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.webtoon-item, .episode-item {
+/* Navigation styling */
+.retro-nav {
     background-color: #000; 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); 
-    flex: 1 1 calc(33% - 40px);
-    box-sizing: border-box;
-    border: 3px solid #0f0; 
-    color: #0f0; 
 }
 
-footer {
-    background-color: #111; 
-    color: #0f0; 
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer ul {
-    list-style-type: none;
+.retro-nav ul {
+    list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
-footer ul li {
+.retro-nav li {
     display: inline;
     margin: 0 15px;
 }
 
-footer ul li a {
-    color: #0f0; 
+.retro-nav a {
+    color: #fff; 
     text-decoration: none;
-    font-family: 'Press Start 2P', cursive; 
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
-/* General styling for the main section */
-main {
+
+.retro-nav a:hover {
+    text-decoration: underline; 
+}
+
+/* Main content styling */
+.retro-featured {
     padding: 20px;
-    background-color: #000; /* Retro black background */
-    color: #0f0; /* Retro green text */
+    text-align: center;
 }
 
-.featured {
-    margin-bottom: 40px;
-}
-
-.featured h2 {
-    font-size: 24px;
+.retro-featured h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.webtoon-list {
+.retro-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
 }
 
-.webtoon-item {
-    background-color: #111; /* Slightly lighter black for contrast */
+.retro-item {
+    background-color: #fff; 
     padding: 15px;
-    border-radius: 8px;
+    border: 1px solid #ddd; 
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.retro-item img {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    border: 2px solid #000; 
+}
+
+.retro-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.retro-item p {
+    font-size: 1em;
+}
+
+/* Footer styling */
+.retro-footer {
+    background-color: #000; 
+    color: #fff; 
     text-align: center;
-    max-width: 300px; /* Ensure the item doesn't get too wide */
-    width: 100%;
+    padding: 10px;
 }
 
-.webtoon-item img {
-    width: 100%;
-    height: auto;
-    max-width: 300px; /* Limit the maximum width of the images */
-    border-radius: 8px; /* Optional: rounded corners */
-    display: block;
-    margin: 0 auto 10px; /* Center image and add some space below */
+.retro-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.webtoon-item h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.retro-footer li {
+    display: inline;
+    margin: 0 10px;
 }
 
-.webtoon-item p {
-    font-size: 14px;
-    line-height: 1.5;
+.retro-footer a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.retro-footer a:hover {
+    text-decoration: underline; 
 }
