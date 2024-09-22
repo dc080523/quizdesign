@@ -1,137 +1,107 @@
-/* Import a retro or vintage-style font */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
 
 body {
-    font-family: 'Press Start 2P', cursive; 
-    background-color: #f7f7f7; 
-    color: #333; 
-    margin: 0;
-    padding: 0;
+  background-color: #f7f7f7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Header styling */
-.retro-header {
-    background-color: #ffeb3b; 
-    color: #000; 
-    text-align: center;
-    padding: 20px;
-    border-bottom: 5px solid #000; 
+.container {
+  width: 80%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.retro-header h1 {
-    font-size: 3em;
-    margin: 0;
+.contact-info {
+  width: 40%;
+  background-color: #f0fff4;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #e6e6e6;
 }
 
-.retro-button {
-    background-color: #000; 
-    color: #fff; 
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    text-transform: uppercase;
+.contact-info h2 {
+  color: #d64545;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.retro-button:hover {
-    background-color: #333; 
+.contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #2f4f4f;
 }
 
-/* Navigation styling */
-.retro-nav {
-    background-color: #000; 
+.contact-info a {
+  color: #2f4f4f;
+  text-decoration: none;
 }
 
-.retro-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+.contact-form {
+  width: 55%;
+  padding: 40px;
 }
 
-.retro-nav li {
-    display: inline;
-    margin: 0 15px;
+.contact-form h2 {
+  color: #008000;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.retro-nav a {
-    color: #fff; 
-    text-decoration: none;
-    font-size: 1.2em;
-    text-transform: uppercase;
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
 }
 
-.retro-nav a:hover {
-    text-decoration: underline; 
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
 }
 
-/* Main content styling */
-.retro-featured {
-    padding: 20px;
-    text-align: center;
+textarea {
+  height: 100px;
 }
 
-.retro-featured h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+button {
+  width: 100%;
+  background-color: #d64545;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.retro-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+button:hover {
+  background-color: #ff6347;
 }
-
-.retro-item {
-    background-color: #fff; 
-    padding: 15px;
-    border: 1px solid #ddd; 
-    margin: 10px;
-    max-width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.retro-item img {
-    width: 100%; 
-    height: auto; 
-    max-height: 200px; 
-    border: 2px solid #000; 
-}
-
-.retro-item h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.retro-item p {
-    font-size: 1em;
-}
-
-/* Footer styling */
-.retro-footer {
-    background-color: #000; 
-    color: #fff; 
-    text-align: center;
-    padding: 10px;
-}
-
-.retro-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.retro-footer li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.retro-footer a {
-    color: #fff; 
-    text-decoration: none;
-    font-size: 1em;
-}
-
-.retro-footer a:hover {
-    text-decoration: underline; 
+.avatar {
+    width: 120px;           /* Ensure width and height are equal for a perfect circle */
+    height: 120px;
+    border-radius: 50%;      /* Makes the image round */
+    object-fit: cover;       /* Ensures the image is scaled properly inside the circle */
+    border: 4px solid #ff6347; /* Optional: Adds a Christmas-themed border */
+    margin-bottom: 15px;
 }

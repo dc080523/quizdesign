@@ -1,55 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Pop Culture</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Contact Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="retro-header">
-        <div class="intro">
-            <h1>Retro Pop Culture</h1>
-            <p>Step back in time and explore the coolest pop culture moments from the past!</p>
-            <button class="retro-button">Explore Now</button>
-        </div>
-    </header>
+  <div class="container">
+    <div class="contact-info">
+    <img src="images/avatar-christmas.png.png" alt="Avatar" class="avatar">
+      <h2>Merry Christmas! Get in touch</h2>
+      <p>Company name</p>
+      <p><a href="mailto:Christmas@frosty.com">Christmas@frosty.com</a></p>
+      <p>+1 800 000000</p>
+      <p>12345 Candy Cane Lane, Christmas City, North Pole</p>
+    </div>
 
-    <nav class="retro-nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">Fashion</a></li>
-            <li><a href="#">Games</a></li>
-        </ul>
-    </nav>
+    <div class="contact-form">
+      <h2>Send a Christmas Email</h2>
+      <form>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
 
-    <main>
-        <section class="retro-featured">
-            <h2>Featured Retro Moments</h2>
-            <div class="retro-list">
-                <article class="retro-item">
-                    <img src="images/retro-movie.jpg" alt="Retro Movie">
-                    <h3>Classic Cinema</h3>
-                    <p>Explore iconic films that defined an era of cinema. From black-and-white classics to technicolor masterpieces.</p>
-                </article>
-                <article class="retro-item">
-                    <img src="images/retro-music.jpg" alt="Retro Music">
-                    <h3>Vintage Music</h3>
-                    <p>Discover the sounds that shaped music history. From rock 'n' roll to jazz, relive the hits of yesteryears.</p>
-                </article>
-                <!-- Repeat for other featured items -->
-            </div>
-        </section>
-    </main>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
 
-    <footer class="retro-footer">
-        <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </footer>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Your Christmas wish" required></textarea>
+
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
+
